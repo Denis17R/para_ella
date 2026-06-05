@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Daniela ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#FFF8F5;
+    color:#2B2B2B;
+}
+
+section{
+    min-height:100vh;
+    padding:40px 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero{
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.heart{
+    font-size:4rem;
+    animation:heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+    0%{transform:scale(1);}
+    25%{transform:scale(1.15);}
+    50%{transform:scale(1);}
+    75%{transform:scale(1.15);}
+    100%{transform:scale(1);}
+}
+
+h1{
+    font-size:2.5rem;
+    margin:15px 0;
+}
+
+h2{
+    margin-bottom:25px;
+    color:#E75480;
+}
+
+p{
+    line-height:1.8;
+    max-width:500px;
+}
+
+.scroll{
+    margin-top:40px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(10px);
+    }
+}
+
+.card-container{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:100%;
+    max-width:400px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    opacity:0;
+    transform:translateY(40px);
+    transition:.7s;
+}
+
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.gallery{
+    width:100%;
+    max-width:400px;
+}
+
+.photo{
+    margin-bottom:20px;
+}
+
+.photo img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.photo p{
+    margin-top:10px;
+}
+
+.words{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.word{
+    background:#FADADD;
+    padding:12px 18px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.word:hover{
+    transform:scale(1.05);
+}
+
+.message-box{
+    margin-top:30px;
+    min-height:80px;
+    font-weight:500;
+}
+
+.surprise-btn{
+    border:none;
+    background:#E75480;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+.hidden-message{
+    margin-top:30px;
+    display:none;
+    font-size:1.3rem;
+}
+
+footer{
+    background:white;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+</head>
+<body>
+
+<!-- PANTALLA 1 -->
+
+<section class="hero">
+
+<div class="heart">❤️</div>
+
+<h1>Para Daniela</h1>
+
+<p>
+Una pequeña sorpresa hecha por Denis
+</p>
+
+<div class="scroll">
+Desliza para comenzar ↓
+</div>
+
+</section>
+
+<!-- PANTALLA 2 -->
+
+<section class="fade">
+
+<h2>Hola Daniela ✨</h2>
+
+<p>
+Cuando nos conocimos no imaginaba que terminarías
+siendo una persona tan importante para mí.
+<br><br>
+Han sido pocos meses, pero suficientes para crear
+recuerdos que valoro mucho.
+<br><br>
+Gracias por compartir tu tiempo conmigo.
+</p>
+
+</section>
+
+<!-- PANTALLA 3 -->
+
+<section>
+
+<h2>Cosas que me gustan de ti</h2>
+
+<div class="card-container">
+
+<div class="card">
+😊 Tu sonrisa
+</div>
+
+<div class="card">
+✨ Tu forma de ser
+</div>
+
+<div class="card">
+💬 Nuestras conversaciones
+</div>
+
+<div class="card">
+❤️ Tu compañía
+</div>
+
+<div class="card">
+🌷 Los momentos que compartimos
+</div>
+
+</div>
+
+</section>
+
+<!-- PANTALLA 4 -->
+
+<section>
+
+<h2>Nuestros recuerdos</h2>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="images/foto1.JPG" alt="">
+<p>Uno de mis recuerdos favoritos contigo ❤️</p>
+</div>
+
+<div class="photo">
+<img src="images/foto2.JPG" alt="">
+<p>Ese día la pasé increíble contigo.</p>
+</div>
+
+<div class="photo">
+<img src="images/foto3.JPG" alt="">
+<p>Momentos simples que se volvieron especiales.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PANTALLA 5 -->
+
+<section>
+
+<h2>Si tuviera que describirte...</h2>
+
+<div class="words">
+
+<div class="word" data-text="Porque siempre haces que todo sea más divertido.">
+Divertida
+</div>
+
+<div class="word" data-text="Porque tienes una forma única de ser.">
+Especial
+</div>
+
+<div class="word" data-text="Porque me encanta pasar tiempo contigo.">
+Auténtica
+</div>
+
+<div class="word" data-text="Porque tu sonrisa ilumina cualquier momento.">
+Bonita
+</div>
+
+<div class="word" data-text="Porque siempre aprendo algo cuando hablamos.">
+Inteligente
+</div>
+
+</div>
+
+<div class="message-box" id="messageBox"></div>
+
+</section>
+
+<!-- PANTALLA 6 -->
+
+<section>
+
+<h2>Tengo que decirte algo...</h2>
+
+<button class="surprise-btn" id="surpriseBtn">
+Presióname ❤️
+</button>
+
+<div class="hidden-message" id="hiddenMessage">
+Me gustas mucho, Daniela ❤️
+<br><br>
+Y me encanta pasar tiempo contigo.
+</div>
+
+</section>
+
+<!-- PANTALLA 7 -->
+
+<section class="fade">
+
+<h2>Gracias ❤️</h2>
+
+<p>
+Gracias por estos meses.
+<br><br>
+Gracias por cada salida.
+<br><br>
+Gracias por cada conversación.
+<br><br>
+Gracias por ser tú.
+</p>
+
+<br><br>
+
+<p>
+Con cariño,
+<br>
+Denis ❤️
+</p>
+
+</section>
+
+<script>
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+
+});
+
+},{
+threshold:0.2
+});
+
+document
+.querySelectorAll(".card, .fade")
+.forEach(el => observer.observe(el));
+
+const words = document.querySelectorAll(".word");
+const box = document.getElementById("messageBox");
+
+words.forEach(word => {
+
+word.addEventListener("click", () => {
+
+box.innerHTML = word.dataset.text;
+
+});
+
+});
+
+document
+.getElementById("surpriseBtn")
+.addEventListener("click", () => {
+
+document.getElementById("hiddenMessage")
+.style.display = "block";
+
+});
+
+</script>
+
+</body>
+</html>
